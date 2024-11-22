@@ -12,10 +12,13 @@
   <body style="margin:0px; overflow:hidden;">
     <a-scene embedded arjs>
     <a-assets>
-      <a-asset-item id="vroid" src="asset/sivi.glb"></a-asset-item>
+      <a-asset-item id="vroid" src="asset/sivi.gltf"></a-asset-item>
     </a-assets>
       <a-marker preset="hiro">
-        <a-gltf-model src="#vroid"></a-gltf-model>
+        <a-entity 
+          position="0 0 0"
+          scale="0.05 0.05 0.05"
+          gltf-model src="#vroid"></a-entity>
       </a-marker>
       <a-entity camera></a-entity>
     </a-scene>
